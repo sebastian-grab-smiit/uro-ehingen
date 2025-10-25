@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Calendar, Phone, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export function Hero() {
   return (
@@ -62,8 +63,15 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative lg:h-[600px] h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-            <img src="/assets/leistung001.jpg" alt="Moderne Praxisräume" className="w-full h-full object-cover" />
+          <div className="relative aspect-[16/10] sm:aspect-[16/9] md:aspect-auto md:h-[420px] lg:h-[560px] rounded-2xl overflow-hidden shadow-2xl">
+            <Image
+              src="/assets/leistung001.jpg"
+              alt="Moderne Praxisräume"
+              fill
+              priority
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
             <div className="absolute inset-0" />
           </div>
         </div>

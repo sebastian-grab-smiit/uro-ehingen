@@ -120,7 +120,16 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    /* Sanftes Scrollen und Offset für festen Header inkl. Notch/Safe-Area */
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(4rem + 0.5rem + env(safe-area-inset-top));
+  }
   body {
     @apply bg-background text-foreground;
+  }
+  /* Alle Sektionen mit Anker-ID erhalten ausreichenden Abstand unter dem fixen Header */
+  section[id] {
+    scroll-margin-top: calc(4rem + 0.5rem + env(safe-area-inset-top));
   }
 }

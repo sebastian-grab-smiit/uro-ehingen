@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image"
 
 export function Team() {
   const team = [
@@ -35,10 +36,12 @@ export function Team() {
           {team.map((member, index) => (
             <Card key={index} className="border-border overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-square relative overflow-hidden bg-secondary">
-                <img
+                <Image
                   src={member.image || "/placeholder.svg"}
                   alt={member.name}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover"
                 />
               </div>
               <CardContent className="p-6 text-center">
@@ -49,6 +52,28 @@ export function Team() {
           ))}
         </div>
 
+        <div className="mt-16 sm:mt-20">
+          <Card className="border-border overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-0">
+              <div className="aspect-square md:aspect-auto relative overflow-hidden bg-secondary">
+                <img src="/assets/sonia.jpg" alt="Sonja Richter" className="w-full h-full object-cover" />
+              </div>
+              <CardContent className="p-8 sm:p-12 flex flex-col justify-center">
+                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-foreground mb-2">Sonja Richter (B.A.)</h3>
+                <p className="text-lg text-primary font-medium mb-6">
+                  Praxismanagerin, Krankenschwester, Fachwirtin für ambulante medizinische Versorgung
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Frau Richter ist unsere Praxismanagerin und für die Organisation eines reibungslosen Praxisablaufs
+                  zuständig. Sie ist außerdem Ansprechpartnerin für die Rechnungsstellung privatärztlicher Leistungen.
+                  Durch ihre langjährige Erfahrung auf dem Gebiet der Urologie kennt sie sich hervorragend mit allen
+                  urologischen Hilfsmitteln (Stomasysteme, Kathetersysteme, Inkontinenzversorgung etc.) aus.
+                </p>
+              </CardContent>
+            </div>
+          </Card>
+        </div>
+
         <div className="mt-12 bg-secondary/50 rounded-2xl p-8 sm:p-12">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl font-serif font-bold text-foreground mb-4">Unser Praxisteam</h3>
@@ -57,11 +82,13 @@ export function Team() {
               legen großen Wert auf eine persönliche Atmosphäre und nehmen uns Zeit für Ihre Anliegen.
             </p>
             <Card className="border-border overflow-hidden hover:shadow-lg transition-shadow mt-8">
-              <div className="relative overflow-hidden bg-secondary">
-                <img
+              <div className="relative overflow-hidden bg-secondary aspect-[16/9]">
+                <Image
                   src="/assets/team.jpg"
                   alt="Team"
-                  className="w-full object-cover"
+                  fill
+                  sizes="(min-width: 1024px) 60vw, 100vw"
+                  className="object-cover"
                 />
               </div>
             </Card>

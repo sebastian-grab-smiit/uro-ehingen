@@ -12,6 +12,7 @@ export function Header() {
     { name: "Startseite", href: "#home" },
     { name: "Leistungen", href: "#leistungen" },
     { name: "Team", href: "#team" },
+    { name: "Öffnungszeiten", href: "#oeffnungszeiten" },
     { name: "Kontakt", href: "#kontakt" },
   ]
 
@@ -21,8 +22,14 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="#home" className="flex items-center gap-2">
-              <div className="h-10 w-10 rounded-full flex items-center justify-center">
-                  <img src="./logo_neu.png" alt="Urologisches Zentrum" />
+              <div className="h-10 w-10 rounded-full flex items-center justify-center overflow-hidden">
+                <img
+                  src="/logo_neu.png"
+                  alt="Urologisches Zentrum"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 object-contain"
+                />
               </div>
               <div className="hidden sm:block">
                 <div className="text-sm font-semibold text-foreground">Urologisches Zentrum</div>
@@ -59,7 +66,14 @@ export function Header() {
           </div>
 
           <div className="flex md:hidden">
-            <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label={mobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="primary-mobile-menu"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
@@ -67,7 +81,7 @@ export function Header() {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-border bg-background">
+        <div id="primary-mobile-menu" className="md:hidden border-t border-border bg-background">
           <div className="space-y-1 px-4 pb-3 pt-2">
             {navigation.map((item) => (
               <Link

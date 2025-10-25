@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react"
 
 export function Contact() {
   return (
@@ -20,7 +20,7 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <Card className="border-border">
               <CardHeader>
@@ -84,26 +84,6 @@ export function Contact() {
                     07344 929292
                   </a>
                 </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border bg-primary/5">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-primary" />
-                  Sprechzeiten
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Montag - Freitag</span>
-                  <span className="font-medium text-foreground">8:00 - 12:00 Uhr</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Montag, Dienstag, Donnerstag</span>
-                  <span className="font-medium text-foreground">14:00 - 17:00 Uhr</span>
-                </div>
-                <p className="text-sm text-muted-foreground pt-2">Termine nach Vereinbarung</p>
               </CardContent>
             </Card>
           </div>

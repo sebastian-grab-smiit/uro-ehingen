@@ -24,6 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="format-detection" content="telephone=no" />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
