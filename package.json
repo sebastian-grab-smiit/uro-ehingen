@@ -1,6 +1,5 @@
 {
   "name": "uro-ehingen",
-  "homepage": "https://github.com/sebastian-grab-smiit/uro-ehingen",
   "private": true,
   "scripts": {
     "build": "next build",
