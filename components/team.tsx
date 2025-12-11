@@ -85,8 +85,8 @@ export function Team() {
         </div>
 
         <div className="mt-12 bg-secondary/50 rounded-2xl p-8 sm:p-12">
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl sm:text-3xl font-serif font-bold text-foreground mb-4">Unser Praxisteam</h3>
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl font-serif font-bold text-foreground mb-4">Unser Praxisteam</h3>
             <p className="text-muted-foreground leading-relaxed">
               Neben unseren Fachärzten steht Ihnen ein erfahrenes Team aus medizinischen Fachangestellten zur Seite. Wir
               legen großen Wert auf eine persönliche Atmosphäre und nehmen uns Zeit für Ihre Anliegen.
