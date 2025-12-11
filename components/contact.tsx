@@ -1,11 +1,7 @@
 "use client"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Mail, MapPin, Phone, Clock, Pin } from "lucide-react"
 import Link from "next/link"
 
 const faqs = [
@@ -26,6 +22,41 @@ const faqs = [
   },
 ]
 
+const locations = [
+  {
+    name: "Ehingen",
+    address: ["Spitalstraße 29", "89584 Ehingen (Donau)"] as const,
+    phone: {
+      display: "07391/781080",
+      href: "tel:+497391781080",
+    },
+    email: "info@uro-ehingen.de",
+    hours: [
+      { day: "Montag", time: "8:00 - 18:00" },
+      { day: "Dienstag", time: "8:00 - 16:00" },
+      { day: "Mittwoch", time: "7:30 - 16:00" },
+      { day: "Donnerstag", time: "8:00 - 16:00" },
+      { day: "Freitag", time: "8:00 - 13:00" },
+    ],
+  },
+  {
+    name: "Blaubeuren",
+    address: ["Ulmer Straße 26", "89143 Blaubeuren"] as const,
+    phone: {
+      display: "07344/923932",
+      href: "tel:+497344923932",
+    },
+    email: "info@uro-ehingen.de",
+    hours: [
+      { day: "Montag", time: "8:00 - 16:00" },
+      { day: "Dienstag", time: "8:00 - 16:00" },
+      { day: "Mittwoch", time: "8:00 - 12:00" },
+      { day: "Donnerstag", time: "8:00 - 16:00" },
+      { day: "Freitag", time: "n. Vereinb." },
+    ],
+  },
+] as const
+
 export function Contact() {
   return (
     <section id="kontakt" className="py-16 sm:py-24 bg-secondary/30">
@@ -35,8 +66,8 @@ export function Contact() {
             Kontakt & Terminvereinbarung
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
-            Vereinbaren Sie Ihren Termin in Ehingen oder Blaubeuren telefonisch oder online. Über das Formular erreichen Sie uns
-            jederzeit, wir melden uns zeitnah zurück.
+            Alle Kontaktwege und Sprechzeiten für Ehingen und Blaubeuren auf einen Blick. Melden Sie sich telefonisch oder
+            per E-Mail – wir koordinieren zeitnahe Termine.
           </p>
           <p className="text-base text-muted-foreground mt-4">
             Mehr zu unserem Angebot finden Sie im Bereich {" "}
@@ -47,22 +78,42 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="space-y-6">
-            <Card className="border-border">
+        <div className="grid gap-8 md:grid-cols-2">
+          {locations.map((location) => (
+            <Card key={location.name} className="border-border h-full">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <MapPin className="h-5 w-5 text-primary" />
-                  Standort Ehingen
+                  Standort {location.name}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-5">
                 <div>
-                  <p className="font-medium text-foreground">Adresse</p>
+                  <p className="font-medium text-foreground flex items-center gap-2">
+                    {/* <Clock className="h-4 w-4" /> */}
+                    Sprechzeiten
+                  </p>
+                  <div className="mt-2 space-y-1 text-sm text-muted-foreground">
+                    {location.hours.map((slot) => (
+                      <div
+                        key={`${location.name}-${slot.day}`}
+                        className="flex items-center justify-between gap-6"
+                      >
+                        <span>{slot.day}</span>
+                        <span>{slot.time}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground flex items-center gap-2">
+                    <MapPin className="h-4 w-4" />
+                    Adresse
+                  </p>
                   <p className="text-muted-foreground">
-                    Spitalstraße 29
+                    {location.address[0]}
                     <br />
-                    89584 Ehingen (Donau)
+                    {location.address[1]}
                   </p>
                 </div>
                 <div>
@@ -70,8 +121,8 @@ export function Contact() {
                     <Phone className="h-4 w-4" />
                     Telefon
                   </p>
-                  <a href="tel:+497391781080" className="text-primary hover:text-accent">
-                    07391/781080
+                  <a href={location.phone.href} className="text-primary hover:text-accent">
+                    {location.phone.display}
                   </a>
                 </div>
                 <div>
@@ -79,52 +130,13 @@ export function Contact() {
                     <Mail className="h-4 w-4" />
                     E-Mail
                   </p>
-                  <a href="mailto:info@uro-ehingen.de" className="text-primary hover:text-accent">
-                    info@uro-ehingen.de
+                  <a href={`mailto:${location.email}`} className="text-primary hover:text-accent">
+                    {location.email}
                   </a>
                 </div>
               </CardContent>
             </Card>
-          </div>
-
-          <div className="space-y-6">
-            <Card className="border-border">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  Standort Blaubeuren
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <p className="font-medium text-foreground">Adresse</p>
-                  <p className="text-muted-foreground">
-                    Ulmer Straße 26
-                    <br />
-                    89143 Blaubeuren
-                  </p>
-                </div>
-                <div>
-                  <p className="font-medium text-foreground flex items-center gap-2">
-                    <Phone className="h-4 w-4" />
-                    Telefon
-                  </p>
-                  <a href="tel:+497344923932" className="text-primary hover:text-accent">
-                    07344/923932
-                  </a>
-                </div>
-                <div>
-                  <p className="font-medium text-foreground flex items-center gap-2">
-                    <Mail className="h-4 w-4" />
-                    E-Mail
-                  </p>
-                  <a href="mailto:info@uro-ehingen.de" className="text-primary hover:text-accent">
-                    info@uro-ehingen.de
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+          ))}
         </div>
 
         <div className="mt-16 sm:mt-20">

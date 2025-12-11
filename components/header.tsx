@@ -12,7 +12,7 @@ export function Header() {
     { name: "Startseite", href: "/#home" },
     { name: "Leistungen", href: "/#leistungen" },
     { name: "Team", href: "/#team" },
-    { name: "Öffnungszeiten", href: "/#sprechzeiten" },
+    { name: "Sprechzeiten", href: "/#kontakt" },
     { name: "Kontakt", href: "/#kontakt" },
   ]
 
