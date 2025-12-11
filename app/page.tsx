@@ -9,7 +9,7 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Urologische Fachärzte in Ehingen & Blaubeuren",
+  title: "Urologisches Zentrum Ehingen - Blaubeuren",
   description:
     "Ihre Urologen in Ehingen und Blaubeuren: Moderne Diagnostik, persönliche Beratung, großzügige Sprechzeiten und schnelle Terminvergabe.",
   alternates: {

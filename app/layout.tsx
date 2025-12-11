@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Urologisches Zentrum Ehingen-Blaubeuren",
   },
   description:
-    "Urologische Fachärzte in Ehingen und Blaubeuren: moderne Diagnostik, persönliche Betreuung, Terminvereinbarung per Telefon oder online.",
+    "Urologisches Zentrum Ehingen - Blaubeuren: moderne Diagnostik, persönliche Betreuung, Terminvereinbarung per Telefon oder online.",
   keywords: [
     "Urologie Ehingen",
     "Urologe Blaubeuren",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     locale: "de_DE",
     url: "https://www.uro-ehingen.de/",
     siteName: "Urologisches Zentrum Ehingen-Blaubeuren",
-    title: "Urologische Fachärzte in Ehingen und Blaubeuren",
+    title: "Urologisches Zentrum Ehingen - Blaubeuren",
     description:
       "Praxis für Urologie und Andrologie in Ehingen und Blaubeuren mit umfassendem Leistungsspektrum und modernen Räumen.",
     images: [
