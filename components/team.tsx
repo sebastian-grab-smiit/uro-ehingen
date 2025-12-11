@@ -59,7 +59,14 @@ export function Team() {
           <Card className="border-border overflow-hidden p-0">
             <div className="grid md:grid-cols-2 gap-0">
               <div className="aspect-square md:aspect-auto relative overflow-hidden bg-secondary">
-                <img src="/assets/sonia.jpg" alt="Sonja Richter" className="w-full h-full object-cover" />
+                <Image
+                  src="/assets/sonia.jpg"
+                  alt="Sonja Richter"
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover"
+                  priority={false}
+                />
               </div>
               <CardContent className="p-8 sm:p-12 flex flex-col justify-center">
                 <h3 className="text-2xl sm:text-3xl font-serif font-bold text-foreground mb-2">Sonja Richter (B.A.)</h3>

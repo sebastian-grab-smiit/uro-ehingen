@@ -1,5 +1,14 @@
+import type { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+
+export const metadata: Metadata = {
+  title: "Datenschutzerklärung | Urologisches Zentrum Ehingen-Blaubeuren",
+  description: "Informationen zur Datenverarbeitung in unserer urologischen Gemeinschaftspraxis in Ehingen und Blaubeuren.",
+  alternates: {
+    canonical: "/datenschutz",
+  },
+}
 
 export default function DatenschutzPage() {
   return (

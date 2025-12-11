@@ -11,10 +11,51 @@ const _merriweather = Merriweather({
 })
 
 export const metadata: Metadata = {
-  title: "Urologisches Zentrum Ehingen - Blaubeuren | Dr. Neßlauer, Dr. Finter, Prang",
+  metadataBase: new URL("https://www.uro-ehingen.de"),
+  title: {
+    default: "Urologisches Zentrum Ehingen-Blaubeuren",
+    template: "%s | Urologisches Zentrum Ehingen-Blaubeuren",
+  },
   description:
-    "Moderne urologische Praxis in Ehingen und Blaubeuren. Kompetente Betreuung durch erfahrene Fachärzte. Terminvereinbarung online möglich.",
-  generator: "v0.app",
+    "Urologische Fachärzte in Ehingen und Blaubeuren: moderne Diagnostik, persönliche Betreuung, Terminvereinbarung per Telefon oder online.",
+  keywords: [
+    "Urologie Ehingen",
+    "Urologe Blaubeuren",
+    "Urologisches Zentrum",
+    "Dr. Neßlauer",
+    "Dr. Finter",
+    "Jürgen Prang",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "de_DE",
+    url: "https://www.uro-ehingen.de/",
+    siteName: "Urologisches Zentrum Ehingen-Blaubeuren",
+    title: "Urologische Fachärzte in Ehingen und Blaubeuren",
+    description:
+      "Praxis für Urologie und Andrologie in Ehingen und Blaubeuren mit umfassendem Leistungsspektrum und modernen Räumen.",
+    images: [
+      {
+        url: "/modern-medical-practice-waiting-room-with-comforta.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Urologisches Zentrum Ehingen-Blaubeuren",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@uroehingen",
+    title: "Urologisches Zentrum Ehingen-Blaubeuren",
+    description:
+      "Fachärzte für Urologie in Ehingen und Blaubeuren – moderne Diagnostik, persönliche Betreuung, flexible Termine.",
+    images: ["/og-uro-zentrum.jpg"],
+  },
+  applicationName: "Uro Ehingen-Blaubeuren",
+  generator: "smiit",
 }
 
 export default function RootLayout({

@@ -6,6 +6,25 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Phone, Mail, MapPin } from "lucide-react"
+import Link from "next/link"
+
+const faqs = [
+  {
+    question: "Benötige ich eine Überweisung für einen Termin?",
+    answer:
+      "Sie können mit oder ohne Überweisung erscheinen. Mit Überweisung beschleunigen Sie jedoch die Anmeldung und die Befundübermittlung.",
+  },
+  {
+    question: "Kann ich den Standort frei wählen?",
+    answer:
+      "Ja, geben Sie bei der Terminanfrage einfach Ehingen oder Blaubeuren an. Wir koordinieren freie Slots zwischen beiden Praxen.",
+  },
+  {
+    question: "Wie erhalte ich kurzfristig Hilfe?",
+    answer:
+      "Bei akuten Beschwerden rufen Sie bitte sofort an. Wir halten täglich Notfallzeiten frei und organisieren bei Bedarf Haus- oder Kliniküberweisungen.",
+  },
+]
 
 export function Contact() {
   return (
@@ -16,7 +35,15 @@ export function Contact() {
             Kontakt & Terminvereinbarung
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
-            Vereinbaren Sie einen Termin oder kontaktieren Sie uns bei Fragen. Wir sind gerne für Sie da.
+            Vereinbaren Sie Ihren Termin in Ehingen oder Blaubeuren telefonisch oder online. Über das Formular erreichen Sie uns
+            jederzeit, wir melden uns zeitnah zurück.
+          </p>
+          <p className="text-base text-muted-foreground mt-4">
+            Mehr zu unserem Angebot finden Sie im Bereich {" "}
+            <Link href="/#leistungen" prefetch={false} className="text-primary hover:text-accent font-semibold">
+              Leistungen
+            </Link>
+            .
           </p>
         </div>
 
@@ -145,6 +172,20 @@ export function Contact() {
               </form>
             </CardContent>
           </Card>
+        </div>
+
+        <div className="mt-16 sm:mt-20">
+          <div className="max-w-4xl mx-auto bg-background border border-border rounded-2xl p-8 sm:p-10">
+            <h3 className="text-2xl font-serif font-bold text-foreground mb-6 text-center">Häufige Fragen</h3>
+            <div className="space-y-4">
+              {faqs.map((faq) => (
+                <div key={faq.question} className="border border-border/60 rounded-xl p-5 bg-secondary/30">
+                  <h4 className="text-lg font-semibold text-foreground mb-2">{faq.question}</h4>
+                  <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -21,7 +21,7 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/#home" className="flex items-center gap-2">
+            <Link href="/#home" prefetch={false} className="flex items-center gap-2">
               <div className="h-10 w-10 rounded-full flex items-center justify-center overflow-hidden">
                 <img
                   src="/logo_neu.png"
@@ -43,6 +43,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
+                prefetch={false}
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 {item.name}
@@ -87,6 +88,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
+                prefetch={false}
                 className="block rounded-lg px-3 py-2 text-base font-medium text-foreground hover:bg-secondary"
                 onClick={() => setMobileMenuOpen(false)}
               >

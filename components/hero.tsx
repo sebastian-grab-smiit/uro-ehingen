@@ -13,8 +13,8 @@ export function Hero() {
                 Ihre Gesundheit in <span className="text-primary">erfahrenen Händen</span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed text-pretty">
-                Willkommen im Urologischen Zentrum Ehingen-Blaubeuren. Wir bieten Ihnen moderne urologische Diagnostik
-                und Therapie mit persönlicher Betreuung.
+                Willkommen im urologischen Zentrum für Ehingen und Blaubeuren – Ihrem Ansprechpartner für Vorsorge,
+                Diagnostik und Andrologie mit kurzen Wegen, direkter Beratung und schneller Terminvergabe.
               </p>
             </div>
 
@@ -45,6 +45,14 @@ export function Hero() {
                     <br />
                     89584 Ehingen (Donau)
                   </p>
+                  <a
+                    href="https://maps.google.com/?q=Spitalstraße+29+89584+Ehingen"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm text-primary hover:text-accent mt-1 inline-flex items-center gap-1"
+                  >
+                    Route planen →
+                  </a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -58,6 +66,14 @@ export function Hero() {
                     <br />
                     89143 Blaubeuren
                   </p>
+                  <a
+                    href="https://maps.google.com/?q=Ulmer+Straße+26+89143+Blaubeuren"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm text-primary hover:text-accent mt-1 inline-flex items-center gap-1"
+                  >
+                    Route planen →
+                  </a>
                 </div>
               </div>
             </div>

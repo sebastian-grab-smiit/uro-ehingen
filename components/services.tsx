@@ -7,32 +7,33 @@ export function Services() {
       icon: Stethoscope,
       title: "Allgemeine Urologie",
       description:
-        "Umfassende urologische Diagnostik und Behandlung aller Erkrankungen des Harntrakts und der männlichen Geschlechtsorgane.",
+        "Umfassende urologische Diagnostik und Behandlung aller Erkrankungen des Harntrakts und der männlichen Geschlechtsorgane an den Standorten Ehingen und Blaubeuren.",
     },
     {
       icon: Microscope,
       title: "Krebsvorsorge",
-      description: "Moderne Vorsorgeuntersuchungen zur Früherkennung von Prostata-, Blasen- und Nierenkrebs.",
+      description:
+        "Moderne Vorsorgeuntersuchungen zur Früherkennung von Prostata-, Blasen- und Nierenkrebs – abgestimmt mit Hausärzten in Ehingen und Blaubeuren.",
     },
     {
       icon: Activity,
       title: "Ultraschalldiagnostik",
-      description: "Hochauflösende Ultraschalluntersuchungen von Nieren, Blase, Prostata und Hoden.",
+      description: "Hochauflösende Ultraschalluntersuchungen von Nieren, Blase, Prostata und Hoden direkt in Ehingen oder Blaubeuren.",
     },
     {
       icon: Heart,
       title: "Männergesundheit",
-      description: "Beratung und Behandlung bei Potenzstörungen, Testosteronmangel und Kinderwunsch.",
+      description: "Beratung und Behandlung bei Potenzstörungen, Testosteronmangel und Kinderwunsch – diskret und wohnortnah.",
     },
     {
       icon: Shield,
       title: "Inkontinenztherapie",
-      description: "Moderne Behandlungskonzepte bei Harn- und Stuhlinkontinenz für Männer und Frauen.",
+      description: "Moderne Behandlungskonzepte bei Harn- und Stuhlinkontinenz für Männer und Frauen inklusive Hilfsmittelberatung.",
     },
     {
       icon: Users,
       title: "Kinderurologie",
-      description: "Spezialisierte Betreuung urologischer Erkrankungen bei Kindern und Jugendlichen.",
+      description: "Spezialisierte Betreuung urologischer Erkrankungen bei Kindern und Jugendlichen – eng abgestimmt mit Kinderärzten in der Region.",
     },
   ]
 

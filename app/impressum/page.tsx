@@ -1,5 +1,14 @@
+import type { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+
+export const metadata: Metadata = {
+  title: "Impressum | Urologisches Zentrum Ehingen-Blaubeuren",
+  description: "Rechtliche Angaben und Kontaktinformationen der urologischen Gemeinschaftspraxis in Ehingen und Blaubeuren.",
+  alternates: {
+    canonical: "/impressum",
+  },
+}
 
 export default function ImpressumPage() {
   return (
