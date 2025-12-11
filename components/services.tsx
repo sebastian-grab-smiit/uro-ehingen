@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { useIsMobile } from "@/components/ui/use-mobile"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
@@ -173,11 +174,18 @@ type ServiceItem = (typeof services)[number]
 
 export function Services() {
   const [activeCategory, setActiveCategory] = useState<"all" | ServiceCategory>("all")
+  const [showAll, setShowAll] = useState(false)
+  const isMobile = useIsMobile()
+
+  const limit = isMobile ? 4 : 6
 
   const filteredServices =
     activeCategory === "all"
       ? services
       : services.filter((service) => service.category === activeCategory)
+
+  const hasOverflow = filteredServices.length > limit
+  const visibleServices = showAll ? filteredServices : filteredServices.slice(0, limit)
 
   const categoryOrder: ("all" | ServiceCategory)[] = [
     "all",
@@ -215,7 +223,10 @@ export function Services() {
                 variant={isActive ? "default" : "outline"}
                 size="sm"
                 className="rounded-full px-4 py-2 text-sm"
-                onClick={() => setActiveCategory(cat)}
+                onClick={() => {
+                  setActiveCategory(cat)
+                  setShowAll(false)
+                }}
               >
                 {label}
               </Button>
@@ -225,10 +236,18 @@ export function Services() {
 
         {/* Grid statt Carousel */}
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {filteredServices.map((service) => (
+          {visibleServices.map((service) => (
             <ServiceCard key={service.title} service={service} />
           ))}
         </div>
+
+        {!showAll && hasOverflow && (
+          <div className="mt-8 text-center">
+            <Button variant="link" className="text-base font-semibold" onClick={() => setShowAll(true)}>
+              Weitere Leistungen anzeigen...
+            </Button>
+          </div>
+        )}
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">
