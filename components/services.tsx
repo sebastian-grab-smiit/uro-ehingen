@@ -31,8 +31,8 @@ const services = [
     category: "operationen",
     excerpt: "Vasektomie, Beschneidung, Hydrozelektomie, Varikozelensklerosierung, Lasertherapien und mehr.",
     details: [
-      "Wir führen sämtliche ambulant möglichen Eingriffe durch – darunter Vasektomie, Zirkumzision, Hydrozelektomie, Varikozelensklerosierung, Feigwarzenlaser, Harnleiterschienung, Stoßwellenlithotripsie sowie Botulinumtoxin-Injektionen in die Blase.",
-      "Die Narkose erfolgt durch das erfahrene Anästhesieteam des Alb-Donau-Klinikums Ehingen unter Leitung von Dr. Markus Brucke.",
+      "Wir führen sämtliche ambulant möglichen Eingriffe durch – darunter Vasektomie (Sterilisation), Zirkumzision (Beschneidung), Hydrozelektomie ("Wasserbruch-OP"), Varikozelensklerosierung, Feigwarzenbehandlung mittels Laser, Harnleiterschienung, Stoßwellenlithotripsie von Nierensteinen und Botulinumtoxin-Injektion in die Harnblase.",
+      "Die Narkose erfolgt durch das erfahrene Anästhesieteam des Alb-Donau-Klinikums Ehingen.",
     ],
   },
   {
@@ -40,8 +40,7 @@ const services = [
     category: "operationen",
     excerpt: "Als Belegärzte decken wir nahezu das komplette Spektrum der operativen Urologie ab.",
     details: [
-      "Im Alb-Donau-Klinikum Ehingen bieten wir Prostata- und Harnblaseneingriffe, inklusive transurethraler Resektionen, radikaler Prostatektomie sowie endoskopischer und Laser-Steintherapie.",
-      "Auch komplexe Tumoroperationen bis hin zur vollständigen Entfernung der Harnblase sind möglich.",
+      "Wir bieten Ihnen als Belegärzte am Alb-Donau Klinikum Ehingen nahezu das komplette Spektrum der operativen Urologie an. Hierzu zählen z.B. die endoskopische Therapie der gutartigen Prostatavergrößerung (transurethrale Resektion Prostata), die endoskopische Therapie von Harnblasentumoren sowie die komplette Entfernung der Harnblase, die Therapie des Prostatakarzinoms (Radikale Prostatektomie) und die Steintherapie (endoskopisch oder Laser).",
     ],
   },
   {
@@ -49,17 +48,16 @@ const services = [
     category: "diagnostik",
     excerpt: "Schonende transrektale Prostatabiopsien mit lokaler Betäubung oder kurzer Narkose.",
     details: [
-      "Wir führen systematische, sonografisch gesteuerte Biopsien bei Karzinomverdacht durch – ambulant, nahezu beschwerdefrei und auf Wunsch in Narkose.",
-      "Zusätzlich bieten wir Fusionsbiopsien mit zuvor erstelltem multiparametrischem MRT zur noch präziseren Diagnose an.",
+      "Wir führen transrektale, sonographisch gesteuerte, systematische Biopsien bei Karzinomverdacht durch – ambulant, nahezu beschwerdefrei und in örtlicher Betäubung oder auf Wunsch in Narkose.",
+      "Zusätzlich bieten wir Fusionsbiopsien mit zuvor erstelltem multiparametrischem MRT an.",
     ],
   },
   {
-    title: "Endoskopie von Blase & Harntrakt",
+    title: "Endoskopie von Blase & oberem Harntrakt",
     category: "diagnostik",
     excerpt: "Minimalinvasive Diagnostik und Therapie von Tumoren, Steinen und Engstellen.",
     details: [
-      "Wir behandeln Erkrankungen von Blase, Harnleitern und Nieren mittels flexibler oder starrer Endoskope.",
-      "Hierzu gehören auch sanfte Zystoskopien mit flexiblen Instrumenten.",
+      "Wir bieten die minimal invasive endoskopische Diagnostik und Therapie bei Harnleiter- und Blasenerkrankungen sowie Tumoren und Steinen in diesem Bereich an. Die Endoskopie der Harnblase erfolgt mittels flexiblem (biegsamen) Zystoskop.",
     ],
   },
   {
@@ -67,13 +65,13 @@ const services = [
     category: "diagnostik",
     excerpt: "Blasendruckmessungen und EMG zur Abklärung von Funktionsstörungen.",
     details: [
-      "Wir analysieren Blasen- und Schließmuskelfunktion bei Inkontinenz, neurologischen Erkrankungen oder unklaren Speicher- und Entleerungsstörungen.",
+      "Wir analysieren Blasen- und Schließmuskelfunktion bei Inkontinenz, neurologischen Erkrankungen oder unklaren Speicher- und Entleerungsstörungen. Hierfür führen wir eine Blasendruckmessung und eine Elektromyographie durch.",
     ],
   },
   {
     title: "Ultraschalluntersuchungen",
     category: "diagnostik",
-    excerpt: "Sonografie von Niere, Blase, Prostata und Hoden inklusive transrektaler Dopplerdiagnostik.",
+    excerpt: "Wir bieten die Sonografie von Niere, Blase, Prostata und Hoden inklusive transrektaler Sonographie und Farbduplexsonographie.",
     details: [
       "Hochauflösende Ultraschalltechnik erlaubt eine strahlenfreie Abklärung – auch transrektal oder als Farbduplex.",
     ],
@@ -83,7 +81,7 @@ const services = [
     category: "diagnostik",
     excerpt: "Konventionelle Aufnahmen, digitale Durchleuchtung und interventionelle Diagnostik.",
     details: [
-      "Wir klären Hämaturie, Tumorverdacht, Harnsteine sowie Schienenlagen ab und nehmen Wechsel einliegender Harnleiterschienen vor.",
+      "Wir führen konventionelle Röntgenaufnahmen, digitale Durchleuchtung und interventionelle Diagnostik zur Abklärung bei Hämaturie (Blut im Urin), Tumorverdacht und Harnsteinen durch. Außerdem wechseln wir Ihnen selbstverständlich einliegende Harnleiterschienen.",
     ],
   },
   {
@@ -91,7 +89,7 @@ const services = [
     category: "diagnostik",
     excerpt: "Umfassende Blutparameter inklusive Hormondiagnostik aus eigenem Praxislabor.",
     details: [
-      "Wir bestimmen PSA, Hormone, Entzündungswerte und weitere Parameter, um Diagnostik und Therapie eng zu steuern.",
+      "Wir bestimmen sämtliche Blutparameter in unserem praxiseigenen Labor für Sie - für schnelle und zuverlässige Ergebnisse. Hierzu zählen z.B. PSA, Hormone, Entzündungswerte und weitere Parameter, um Diagnostik und Therapie eng zu steuern.",
     ],
   },
   {
@@ -99,8 +97,8 @@ const services = [
     category: "tumor",
     excerpt: "Diagnostik, Therapie und Nachsorge sämtlicher urologischer Tumoren.",
     details: [
-      "Wir orientieren uns an Leitlinien von DGU, EAU und AUA sowie aktuellen Studien.",
-      "Zusammenarbeit mit dem Prostatakarzinomzentrum des Universitätsklinikums Ulm (CCCU) sichert Zugang zu interdisziplinären Therapien.",
+      "Die Diagnostik, Behandlung und Nachsorge urologischer Krebserkrankungen stellt einen besonderen Schwerpunkt unserer Praxis dar. Wir verfügen über langjährige Erfahrungen mit sämtlichen Formen der konservativen und operativen Tumorbehandlung in allen Erkrankungsstadien. 
+Wir orientieren uns an wissenschaftlich fundierten Therapiestandards sowie aktuellen Studienergebnissen und Leitlinien der Deutschen Gesellschaft für Urologie (DGU), der europäischen urologischen Gesellschaft (EAU) und der amerikanischen urologischen Gesellschaft (AUA). Es besteht zudem eine Kooperation mit dem interdisziplinären Prostatakarzinomzentrum des Universitätsklinikums Ulm bzw. des Comprehensive Cancer Center Universitätsklinikum Ulm (CCCU).",
     ],
   },
   {
@@ -108,7 +106,7 @@ const services = [
     category: "tumor",
     excerpt: "Ambulante und stationäre medikamentöse Tumortherapien durch zertifizierte Fachärzte.",
     details: [
-      "Alle Ärztinnen und Ärzte besitzen die Zusatzbezeichnung „Medikamentöse Tumortherapie“ und führen Chemo- bzw. Immuntherapien bei urologischen Tumoren durch.",
+      "Wir führen jeweils die personengebundene Facharztbezeichnung "Medikamentöse Tumortherapie", die besondere Kenntnisse in der onkologischen Therapie urologischer Krebserkrankungen nachweist, und führen Chemotherapie bzw. Immuntherapien bei allen urologischen Krebserkrankungen durch.",
     ],
   },
   {
@@ -116,8 +114,9 @@ const services = [
     category: "maennergesundheit",
     excerpt: "Früherkennung nach G-BA-Richtlinie plus sinnvolle Zusatzleistungen.",
     details: [
-      "Wir führen Anamnese, Untersuchung des äußeren Genitals, rektale Prostatapalpation und Lymphknoten-Check gemäß Vorgaben ab 45 Jahren durch.",
-      "Ultraschall und PSA-Bestimmung bieten wir als individuelle Gesundheitsleistungen an, wenn medizinisch sinnvoll.",
+      "Gemäß den G-BA-Richtlinien für das Leistungsspektrum gesetzlich krankenversicherter Patienten bieten wir für Männer die gezielte Anamnese, eine Untersuchung des äußeren Genitals, die rektale Prostatapalpation und den regionären Lymphknoten-Check gemäß Vorgaben ab 45 Jahren durch. Zudem bieten wir sowohl für Frauen als auch für Männer die Früherkennung von Krebserkrankungen der Haut ab dem Alter von 35 Jahren sowie des Rektums und des übrigen Dickdarms ab dem Alter von 50 Jahren an.",
+      "Unserer Meinung nach sinnvolle Zusatzuntersuchungen wie Ultraschalluntersuchung der Nieren oder die Bestimmung des PSA-Werts sind im Rahmen der gesetzlichen Leistungen nicht enthalten. Gerne bieten wir Ihnen diese Untersuchungen allerdings als zusätzliche Leistung an.
+Medizinisch notwendige Untersuchungen führen wir selbstverständlich zu Lasten der gesetzlichen Krankenversicherung  –d.h. ohne zusätzliche Kosten für Sie - durch.",
     ],
   },
   {
@@ -125,7 +124,7 @@ const services = [
     category: "maennergesundheit",
     excerpt: "Diagnostik und Therapie bei Fertilitäts-, Hormon- und Sexualitätsfragen.",
     details: [
-      "Wir behandeln Infertilität, Hypogonadismus, Erektionsstörungen, beraten zur Sterilisation und begleiten Männer im Alterungsprozess.",
+      "Die Andrologie umfasst die Physiologie und Pathologie der männlichen Fortpflanzungsfunktionen, sexualmedizinische und endokrinologische Aspekte und die Problematik des alternden Mannes in Forschung und Klinik. Wir behandeln Infertilität, Hypogonadismus und Erektionsstörungen. Außerdem beraten wir Sie zur Sterilisation und begleiten Männer im Alterungsprozess.",
     ],
   },
   {
@@ -133,7 +132,7 @@ const services = [
     category: "maennergesundheit",
     excerpt: "Individuelle Abklärung bei nachlassender Libido oder Potenz.",
     details: [
-      "Wir betrachten biologische, psychische und soziale Faktoren und entwickeln maßgeschneiderte Therapie- oder Beratungsangebote.",
+      "Die Sexualität des Menschen ist ein Zusammenspiel verschiedener biologischer, psychischer und sozialer Faktoren. Mit dem Älterwerden können die sexuelle Lust und die Erektionsfähigkeit (Potenz) nachlassen. Einige Männer nehmen bereits ab dem 40. Lebensjahr Veränderungen wahr, die individuell sehr unterschiedlich sein können. Die spezifischen Ursachen können erkannt und erfolgreich behandelt werden. Wenn Sie Veränderungen Ihrer sexuellen Leistungsfähigkeit und Potenz feststellen, sprechen Sie uns bitte vertrauensvoll an.",
     ],
   },
   {
@@ -141,7 +140,7 @@ const services = [
     category: "maennergesundheit",
     excerpt: "Diagnose und Behandlung hormoneller Veränderungen im Alter.",
     details: [
-      "Mittels Laboranalysen erkennen wir Hormonmangelzustände, die z. B. Müdigkeit oder Antriebslosigkeit verursachen, und behandeln sie zielgerichtet.",
+      "Auch bei Männern kann es mit zunehmendem Alter zu Veränderungen im Hormonhaushalt kommen. Gemeinsam mit anderen Faktoren können dadurch vielfältige Beschwerden wie Abgeschlagenheit, Lustlosigkeit, Antriebsarmut, Konzentrationsmangel u.a. ausgelöst werden. Durch eine entsprechende Labordiagnostik kann ein relevanter Hormonmangel erkannt und ggf. auch therapiert werden.",
     ],
   },
   {
@@ -149,7 +148,7 @@ const services = [
     category: "maennergesundheit",
     excerpt: "Spermiogramm, Hormondiagnostik und weiterführende Beratung.",
     details: [
-      "Wir bewerten die Zeugungsfähigkeit durch standardisierte Analysen und planen weitere Diagnostik oder Therapie gemeinsam mit Ihnen.",
+      "Die Spermauntersuchung (Spermiogramm) ist die zentrale Untersuchung, um die Zeugungsfähigkeit des Mannes zu beurteilen. Wir beraten Sie und führen ggf.weitere Hormonanalysen durch.",
     ],
   },
   {
@@ -157,7 +156,8 @@ const services = [
     category: "haeufige-beschwerden",
     excerpt: "Abklärung wiederkehrender Blasenentzündungen und Geschlechtskrankheiten.",
     details: [
-      "Wir identifizieren Erreger präzise und setzen gezielte Therapien ein – inklusive Beratung zu natürlichen Prophylaxemaßnahmen.",
+      "Wiederholt auftretende Blasenentzündungen von Frau und Mann sollten fachgerecht abgeklärt werden. Besonders wichtig ist die exakte Erregerdiagnostik und ggf. gezielte Therapie. Wir beraten Sie auch über natürliche Prophylaxemaßnahmen.
+Auch die Diagnostik und Therapie von Geschlechtserkrankungen gehört zu unserem Spektrum.",
     ],
   },
   {
@@ -165,7 +165,7 @@ const services = [
     category: "haeufige-beschwerden",
     excerpt: "Diagnostik und Therapie bei Harnverlust und Senkungsbeschwerden.",
     details: [
-      "Je nach Ursache setzen wir medikamentöse, physiotherapeutische oder operative Maßnahmen ein.",
+      "Je nach Ursache setzen wir medikamentöse oder operative Maßnahmen ein, um Harninkontinenz (Harnverlust) und Senkungsbeschwerden abzuklären und zu therapieren.",
     ],
   },
 ] as const
