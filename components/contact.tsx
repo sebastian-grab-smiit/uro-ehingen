@@ -97,10 +97,10 @@ export function Contact() {
                     {location.hours.map((slot) => (
                       <div
                         key={`${location.name}-${slot.day}`}
-                        className="flex items-center justify-between gap-6"
+                        className="flex items-center gap-4"
                       >
-                        <span>{slot.day}</span>
-                        <span>{slot.time}</span>
+                        <span className="flex-1">{slot.day}</span>
+                        <span className="w-32 text-right tabular-nums pr-6">{slot.time}</span>
                       </div>
                     ))}
                   </div>
@@ -139,7 +139,7 @@ export function Contact() {
           ))}
         </div>
 
-        <div className="mt-16 sm:mt-20">
+        {/* <div className="mt-16 sm:mt-20">
           <div className="max-w-4xl mx-auto bg-background border border-border rounded-2xl p-8 sm:p-10">
             <h3 className="text-2xl font-serif font-bold text-foreground mb-6 text-center">Häufige Fragen</h3>
             <div className="space-y-4">
@@ -151,7 +151,7 @@ export function Contact() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

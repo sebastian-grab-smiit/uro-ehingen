@@ -234,7 +234,7 @@ export function Services() {
         </div>
 
         {/* Grid statt Carousel */}
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 items-start">
           {visibleServices.map((service) => (
             <ServiceCard key={service.title} service={service} />
           ))}
@@ -268,7 +268,7 @@ function ServiceCard({ service }: { service: ServiceItem }) {
   const [open, setOpen] = useState(false)
 
   return (
-    <Card className="h-full border-border bg-background/95 shadow-sm flex flex-col">
+    <Card className="border-border bg-background/95 shadow-sm flex flex-col min-h-[280px] sm:min-h-[280px]">
       <CardHeader className="space-y-3">
         <p className="text-xs font-semibold uppercase tracking-wide text-primary">
           {categoryLabels[service.category]}
@@ -281,21 +281,21 @@ function ServiceCard({ service }: { service: ServiceItem }) {
         </CardDescription>
       </CardHeader>
 
-      <CardContent className="mt-auto pt-0">
-        <Collapsible open={open} onOpenChange={setOpen} className="space-y-3">
-          <CollapsibleContent>
-            <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed list-disc list-inside">
+      <CardContent className="pt-0 flex-1 flex flex-col">
+        <Collapsible open={open} onOpenChange={setOpen} className="flex-1 flex flex-col">
+          <CollapsibleContent className="flex-1">
+            <div className="space-y-6 text-sm text-muted-foreground leading-relaxed">
               {service.details.map((paragraph) => (
-                <li key={paragraph}>{paragraph}</li>
+                <p key={paragraph}>{paragraph}</p>
               ))}
-            </ul>
+            </div>
           </CollapsibleContent>
           {service.details.length > 0 && (
             <CollapsibleTrigger asChild>
               <Button
                 variant="ghost"
                 size="sm"
-                className="px-4 text-primary hover:text-white font-medium"
+                className="px-4 text-primary hover:text-white font-medium mt-auto"
               >
                 {open ? "Weniger anzeigen" : "Mehr erfahren"}
               </Button>
