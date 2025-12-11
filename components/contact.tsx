@@ -33,7 +33,7 @@ export function Contact() {
                 <div>
                   <p className="font-medium text-foreground">Adresse</p>
                   <p className="text-muted-foreground">
-                    Hauptstraße 45
+                    Spitalstraße 29
                     <br />
                     89584 Ehingen (Donau)
                   </p>
@@ -43,8 +43,8 @@ export function Contact() {
                     <Phone className="h-4 w-4" />
                     Telefon
                   </p>
-                  <a href="tel:+497391777770" className="text-primary hover:text-accent">
-                    07391 777770
+                  <a href="tel:+497391781080" className="text-primary hover:text-accent">
+                    07391/781080
                   </a>
                 </div>
                 <div>
@@ -70,7 +70,7 @@ export function Contact() {
                 <div>
                   <p className="font-medium text-foreground">Adresse</p>
                   <p className="text-muted-foreground">
-                    Karlstraße 28
+                    Ulmer Straße 26
                     <br />
                     89143 Blaubeuren
                   </p>
@@ -80,8 +80,17 @@ export function Contact() {
                     <Phone className="h-4 w-4" />
                     Telefon
                   </p>
-                  <a href="tel:+497344929292" className="text-primary hover:text-accent">
-                    07344 929292
+                  <a href="tel:+497344923932" className="text-primary hover:text-accent">
+                    07344/923932
+                  </a>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground flex items-center gap-2">
+                    <Mail className="h-4 w-4" />
+                    E-Mail
+                  </p>
+                  <a href="mailto:info@uro-ehingen.de" className="text-primary hover:text-accent">
+                    info@uro-ehingen.de
                   </a>
                 </div>
               </CardContent>

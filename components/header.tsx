@@ -9,11 +9,11 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navigation = [
-    { name: "Startseite", href: "#home" },
-    { name: "Leistungen", href: "#leistungen" },
-    { name: "Team", href: "#team" },
-    { name: "Öffnungszeiten", href: "#oeffnungszeiten" },
-    { name: "Kontakt", href: "#kontakt" },
+    { name: "Startseite", href: "/#home" },
+    { name: "Leistungen", href: "/#leistungen" },
+    { name: "Team", href: "/#team" },
+    { name: "Öffnungszeiten", href: "/#sprechzeiten" },
+    { name: "Kontakt", href: "/#kontakt" },
   ]
 
   return (
@@ -21,7 +21,7 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link href="#home" className="flex items-center gap-2">
+            <Link href="/#home" className="flex items-center gap-2">
               <div className="h-10 w-10 rounded-full flex items-center justify-center overflow-hidden">
                 <img
                   src="/logo_neu.png"
@@ -52,13 +52,13 @@ export function Header() {
 
           <div className="hidden md:flex md:items-center md:gap-3">
             <Button variant="outline" size="sm" asChild>
-              <a href="tel:+497391777770" className="flex items-center gap-2">
+              <a href="tel:+497391781080" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
                 <span>Anrufen</span>
               </a>
             </Button>
             <Button size="sm" asChild>
-              <a href="#kontakt" className="flex items-center gap-2">
+              <a href="/#kontakt" className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 <span>Termin buchen</span>
               </a>
@@ -95,13 +95,13 @@ export function Header() {
             ))}
             <div className="flex flex-col gap-2 pt-4">
               <Button variant="outline" size="sm" asChild className="w-full bg-transparent">
-                <a href="tel:+497391777770" className="flex items-center justify-center gap-2">
+                <a href="tel:+497391781080" className="flex items-center justify-center gap-2">
                   <Phone className="h-4 w-4" />
                   <span>Anrufen</span>
                 </a>
               </Button>
               <Button size="sm" asChild className="w-full">
-                <a href="#kontakt" className="flex items-center justify-center gap-2">
+                <a href="/#kontakt" className="flex items-center justify-center gap-2">
                   <Calendar className="h-4 w-4" />
                   <span>Termin buchen</span>
                 </a>

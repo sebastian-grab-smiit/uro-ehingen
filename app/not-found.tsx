@@ -27,7 +27,7 @@ export default function NotFound() {
           <p className="text-sm text-muted-foreground">
             Benötigen Sie Hilfe? Kontaktieren Sie uns unter{" "}
             <a href="tel:+4973919151550" className="text-primary hover:underline font-medium">
-              07391 / 915 15 50
+              07391/781080
             </a>
           </p>
         </div>

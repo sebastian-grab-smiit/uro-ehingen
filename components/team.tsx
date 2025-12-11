@@ -34,7 +34,10 @@ export function Team() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member, index) => (
-            <Card key={index} className="border-border overflow-hidden hover:shadow-lg transition-shadow">
+            <Card
+              key={index}
+              className="border-border overflow-hidden hover:shadow-lg transition-shadow p-0 gap-0"
+            >
               <div className="aspect-square relative overflow-hidden bg-secondary">
                 <Image
                   src={member.image || "/placeholder.svg"}
@@ -53,7 +56,7 @@ export function Team() {
         </div>
 
         <div className="mt-16 sm:mt-20">
-          <Card className="border-border overflow-hidden">
+          <Card className="border-border overflow-hidden p-0">
             <div className="grid md:grid-cols-2 gap-0">
               <div className="aspect-square md:aspect-auto relative overflow-hidden bg-secondary">
                 <img src="/assets/sonia.jpg" alt="Sonja Richter" className="w-full h-full object-cover" />
@@ -81,7 +84,7 @@ export function Team() {
               Neben unseren Fachärzten steht Ihnen ein erfahrenes Team aus medizinischen Fachangestellten zur Seite. Wir
               legen großen Wert auf eine persönliche Atmosphäre und nehmen uns Zeit für Ihre Anliegen.
             </p>
-            <Card className="border-border overflow-hidden hover:shadow-lg transition-shadow mt-8">
+            <Card className="border-border overflow-hidden hover:shadow-lg transition-shadow mt-8 p-0">
               <div className="relative overflow-hidden bg-secondary aspect-[16/9]">
                 <Image
                   src="/assets/team.jpg"

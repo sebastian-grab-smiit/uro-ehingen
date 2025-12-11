@@ -31,22 +31,22 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Schnelllinks</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#home" className="opacity-80 hover:opacity-100 transition-opacity">
+                <Link href="/#home" className="opacity-80 hover:opacity-100 transition-opacity">
                   Startseite
                 </Link>
               </li>
               <li>
-                <Link href="#leistungen" className="opacity-80 hover:opacity-100 transition-opacity">
+                <Link href="/#leistungen" className="opacity-80 hover:opacity-100 transition-opacity">
                   Leistungen
                 </Link>
               </li>
               <li>
-                <Link href="#team" className="opacity-80 hover:opacity-100 transition-opacity">
+                <Link href="/#team" className="opacity-80 hover:opacity-100 transition-opacity">
                   Team
                 </Link>
               </li>
               <li>
-                <Link href="#kontakt" className="opacity-80 hover:opacity-100 transition-opacity">
+                <Link href="/#kontakt" className="opacity-80 hover:opacity-100 transition-opacity">
                   Kontakt
                 </Link>
               </li>

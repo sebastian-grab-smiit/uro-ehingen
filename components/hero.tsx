@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <section id="home" className="relative pt-24 pb-16 sm:pt-32 sm:pb-24">
+    <section id="home" className="relative pt-24 pb-16 sm:pt-36 sm:pb-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
@@ -26,9 +26,9 @@ export function Hero() {
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base bg-transparent">
-                <a href="tel:+497391777770" className="flex items-center gap-2">
+                <a href="tel:+497391781080" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
-                  <span>07391 777770</span>
+                  <span>07391/781080</span>
                 </a>
               </Button>
             </div>
@@ -41,9 +41,9 @@ export function Hero() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Standort Ehingen</h3>
                   <p className="text-sm text-muted-foreground">
-                    Hauptstraße 45
+                    Spitalstraße 29
                     <br />
-                    89584 Ehingen
+                    89584 Ehingen (Donau)
                   </p>
                 </div>
               </div>
@@ -54,7 +54,7 @@ export function Hero() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Standort Blaubeuren</h3>
                   <p className="text-sm text-muted-foreground">
-                    Karlstraße 28
+                    Ulmer Straße 26
                     <br />
                     89143 Blaubeuren
                   </p>

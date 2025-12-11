@@ -10,7 +10,7 @@ export default function DatenschutzPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl font-bold text-foreground mb-8">Datenschutzerklärung</h1>
 
-            <div className="prose prose-slate max-w-3xl mx-auto space-y-8">
+            <div className="prose prose-slate max-w-none space-y-8">
 
               {/* 1) Einleitung und Kontaktdaten */}
               <section>
@@ -29,7 +29,7 @@ export default function DatenschutzPage() {
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   1.3 Der Verantwortliche hat einen Datenschutzbeauftragten bestellt, dieser ist wie folgt zu erreichen:
-                  "Sonja Richter c/o Urologisches Zentrum Ehingen-Blaubeuren, Spitalstraße 29, 89584 Ehingen, 07391-781080, info@uro-ehingen.de"
+                  "Sonja Richter c/o Urologisches Zentrum Ehingen-Blaubeuren, Spitalstraße 29, 89584 Ehingen, 07391/781080, info@uro-ehingen.de"
                 </p>
               </section>
 
