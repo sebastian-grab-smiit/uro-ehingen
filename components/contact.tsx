@@ -85,7 +85,9 @@ export function Contact() {
                 </div>
               </CardContent>
             </Card>
+          </div>
 
+          <div className="space-y-6">
             <Card className="border-border">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -123,55 +125,6 @@ export function Contact() {
               </CardContent>
             </Card>
           </div>
-
-          <Card className="border-border">
-            <CardHeader>
-              <CardTitle>Terminanfrage</CardTitle>
-              <CardDescription>Füllen Sie das Formular aus und wir melden uns zeitnah bei Ihnen.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form className="space-y-4">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="vorname">Vorname *</Label>
-                    <Input id="vorname" placeholder="Max" required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="nachname">Nachname *</Label>
-                    <Input id="nachname" placeholder="Mustermann" required />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">E-Mail *</Label>
-                  <Input id="email" type="email" placeholder="max@beispiel.de" required />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="telefon">Telefon *</Label>
-                  <Input id="telefon" type="tel" placeholder="0123 456789" required />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="standort">Bevorzugter Standort</Label>
-                  <select
-                    id="standort"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                  >
-                    <option>Ehingen</option>
-                    <option>Blaubeuren</option>
-                  </select>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="nachricht">Ihre Nachricht</Label>
-                  <Textarea id="nachricht" placeholder="Teilen Sie uns Ihr Anliegen mit..." rows={4} />
-                </div>
-                <Button type="submit" className="w-full">
-                  Terminanfrage senden
-                </Button>
-                <p className="text-xs text-muted-foreground">
-                  * Pflichtfelder. Ihre Daten werden vertraulich behandelt.
-                </p>
-              </form>
-            </CardContent>
-          </Card>
         </div>
 
         <div className="mt-16 sm:mt-20">

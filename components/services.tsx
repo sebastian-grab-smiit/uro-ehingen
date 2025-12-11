@@ -71,7 +71,7 @@ export function Services() {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">Sie haben Fragen zu unseren Leistungen?</p>
-          <a href="#kontakt" className="text-primary hover:text-accent font-medium underline underline-offset-4">
+          <a href="tel:+497391781080" className="text-primary hover:text-accent font-medium underline underline-offset-4">
             Kontaktieren Sie uns für eine persönliche Beratung
           </a>
         </div>

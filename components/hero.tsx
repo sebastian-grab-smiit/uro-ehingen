@@ -20,15 +20,9 @@ export function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild className="text-base">
-                <a href="#kontakt" className="flex items-center gap-2">
-                  <Calendar className="h-5 w-5" />
-                  <span>Termin vereinbaren</span>
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" asChild className="text-base bg-transparent">
                 <a href="tel:+497391781080" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
-                  <span>07391/781080</span>
+                  <span>07391 / 781080</span>
                 </a>
               </Button>
             </div>

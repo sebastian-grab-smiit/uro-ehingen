@@ -52,16 +52,10 @@ export function Header() {
           </div>
 
           <div className="hidden md:flex md:items-center md:gap-3">
-            <Button variant="outline" size="sm" asChild>
+            <Button size="sm" asChild>
               <a href="tel:+497391781080" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
                 <span>Anrufen</span>
-              </a>
-            </Button>
-            <Button size="sm" asChild>
-              <a href="/#kontakt" className="flex items-center gap-2">
-                <Calendar className="h-4 w-4" />
-                <span>Termin buchen</span>
               </a>
             </Button>
           </div>
@@ -96,16 +90,10 @@ export function Header() {
               </Link>
             ))}
             <div className="flex flex-col gap-2 pt-4">
-              <Button variant="outline" size="sm" asChild className="w-full bg-transparent">
+              <Button size="sm" asChild className="w-full">
                 <a href="tel:+497391781080" className="flex items-center justify-center gap-2">
                   <Phone className="h-4 w-4" />
                   <span>Anrufen</span>
-                </a>
-              </Button>
-              <Button size="sm" asChild className="w-full">
-                <a href="/#kontakt" className="flex items-center justify-center gap-2">
-                  <Calendar className="h-4 w-4" />
-                  <span>Termin buchen</span>
                 </a>
               </Button>
             </div>
