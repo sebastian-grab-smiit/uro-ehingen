@@ -31,7 +31,7 @@ const services = [
     category: "operationen",
     excerpt: "Vasektomie, Beschneidung, Hydrozelektomie, Varikozelensklerosierung, Lasertherapien und mehr.",
     details: [
-      "Wir führen sämtliche ambulant möglichen Eingriffe durch – darunter Vasektomie (Sterilisation), Zirkumzision (Beschneidung), Hydrozelektomie ("Wasserbruch-OP"), Varikozelensklerosierung, Feigwarzenbehandlung mittels Laser, Harnleiterschienung, Stoßwellenlithotripsie von Nierensteinen und Botulinumtoxin-Injektion in die Harnblase.",
+      "Wir führen sämtliche ambulant möglichen Eingriffe durch – darunter Vasektomie (Sterilisation), Zirkumzision (Beschneidung), Hydrozelektomie ('Wasserbruch-OP'), Varikozelensklerosierung, Feigwarzenbehandlung mittels Laser, Harnleiterschienung, Stoßwellenlithotripsie von Nierensteinen und Botulinumtoxin-Injektion in die Harnblase.",
       "Die Narkose erfolgt durch das erfahrene Anästhesieteam des Alb-Donau-Klinikums Ehingen.",
     ],
   },
@@ -97,8 +97,8 @@ const services = [
     category: "tumor",
     excerpt: "Diagnostik, Therapie und Nachsorge sämtlicher urologischer Tumoren.",
     details: [
-      "Die Diagnostik, Behandlung und Nachsorge urologischer Krebserkrankungen stellt einen besonderen Schwerpunkt unserer Praxis dar. Wir verfügen über langjährige Erfahrungen mit sämtlichen Formen der konservativen und operativen Tumorbehandlung in allen Erkrankungsstadien. 
-Wir orientieren uns an wissenschaftlich fundierten Therapiestandards sowie aktuellen Studienergebnissen und Leitlinien der Deutschen Gesellschaft für Urologie (DGU), der europäischen urologischen Gesellschaft (EAU) und der amerikanischen urologischen Gesellschaft (AUA). Es besteht zudem eine Kooperation mit dem interdisziplinären Prostatakarzinomzentrum des Universitätsklinikums Ulm bzw. des Comprehensive Cancer Center Universitätsklinikum Ulm (CCCU).",
+      "Die Diagnostik, Behandlung und Nachsorge urologischer Krebserkrankungen stellt einen besonderen Schwerpunkt unserer Praxis dar. Wir verfügen über langjährige Erfahrungen mit sämtlichen Formen der konservativen und operativen Tumorbehandlung in allen Erkrankungsstadien.",
+      "Wir orientieren uns an wissenschaftlich fundierten Therapiestandards sowie aktuellen Studienergebnissen und Leitlinien der Deutschen Gesellschaft für Urologie (DGU), der europäischen urologischen Gesellschaft (EAU) und der amerikanischen urologischen Gesellschaft (AUA). Es besteht zudem eine Kooperation mit dem interdisziplinären Prostatakarzinomzentrum des Universitätsklinikums Ulm bzw. des Comprehensive Cancer Center Universitätsklinikum Ulm (CCCU).",
     ],
   },
   {
@@ -106,7 +106,7 @@ Wir orientieren uns an wissenschaftlich fundierten Therapiestandards sowie aktue
     category: "tumor",
     excerpt: "Ambulante und stationäre medikamentöse Tumortherapien durch zertifizierte Fachärzte.",
     details: [
-      "Wir führen jeweils die personengebundene Facharztbezeichnung "Medikamentöse Tumortherapie", die besondere Kenntnisse in der onkologischen Therapie urologischer Krebserkrankungen nachweist, und führen Chemotherapie bzw. Immuntherapien bei allen urologischen Krebserkrankungen durch.",
+      "Wir führen jeweils die personengebundene Facharztbezeichnung 'Medikamentöse Tumortherapie', die besondere Kenntnisse in der onkologischen Therapie urologischer Krebserkrankungen nachweist, und führen Chemotherapie bzw. Immuntherapien bei allen urologischen Krebserkrankungen durch.",
     ],
   },
   {
@@ -115,8 +115,8 @@ Wir orientieren uns an wissenschaftlich fundierten Therapiestandards sowie aktue
     excerpt: "Früherkennung nach G-BA-Richtlinie plus sinnvolle Zusatzleistungen.",
     details: [
       "Gemäß den G-BA-Richtlinien für das Leistungsspektrum gesetzlich krankenversicherter Patienten bieten wir für Männer die gezielte Anamnese, eine Untersuchung des äußeren Genitals, die rektale Prostatapalpation und den regionären Lymphknoten-Check gemäß Vorgaben ab 45 Jahren durch. Zudem bieten wir sowohl für Frauen als auch für Männer die Früherkennung von Krebserkrankungen der Haut ab dem Alter von 35 Jahren sowie des Rektums und des übrigen Dickdarms ab dem Alter von 50 Jahren an.",
-      "Unserer Meinung nach sinnvolle Zusatzuntersuchungen wie Ultraschalluntersuchung der Nieren oder die Bestimmung des PSA-Werts sind im Rahmen der gesetzlichen Leistungen nicht enthalten. Gerne bieten wir Ihnen diese Untersuchungen allerdings als zusätzliche Leistung an.
-Medizinisch notwendige Untersuchungen führen wir selbstverständlich zu Lasten der gesetzlichen Krankenversicherung  –d.h. ohne zusätzliche Kosten für Sie - durch.",
+      "Unserer Meinung nach sinnvolle Zusatzuntersuchungen wie Ultraschalluntersuchung der Nieren oder die Bestimmung des PSA-Werts sind im Rahmen der gesetzlichen Leistungen nicht enthalten. Gerne bieten wir Ihnen diese Untersuchungen allerdings als zusätzliche Leistung an.",
+      "Medizinisch notwendige Untersuchungen führen wir selbstverständlich zu Lasten der gesetzlichen Krankenversicherung  - d.h. ohne zusätzliche Kosten für Sie - durch.",
     ],
   },
   {
@@ -156,8 +156,7 @@ Medizinisch notwendige Untersuchungen führen wir selbstverständlich zu Lasten 
     category: "haeufige-beschwerden",
     excerpt: "Abklärung wiederkehrender Blasenentzündungen und Geschlechtskrankheiten.",
     details: [
-      "Wiederholt auftretende Blasenentzündungen von Frau und Mann sollten fachgerecht abgeklärt werden. Besonders wichtig ist die exakte Erregerdiagnostik und ggf. gezielte Therapie. Wir beraten Sie auch über natürliche Prophylaxemaßnahmen.
-Auch die Diagnostik und Therapie von Geschlechtserkrankungen gehört zu unserem Spektrum.",
+      "Wiederholt auftretende Blasenentzündungen von Frau und Mann sollten fachgerecht abgeklärt werden. Besonders wichtig ist die exakte Erregerdiagnostik und ggf. gezielte Therapie. Wir beraten Sie auch über natürliche Prophylaxemaßnahmen. Auch die Diagnostik und Therapie von Geschlechtserkrankungen gehört zu unserem Spektrum.",
     ],
   },
   {
