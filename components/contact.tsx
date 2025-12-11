@@ -71,7 +71,7 @@ export function Contact() {
           </p>
           <p className="text-base text-muted-foreground mt-4">
             Mehr zu unserem Angebot finden Sie im Bereich {" "}
-            <Link href="/#leistungen" prefetch={false} className="text-primary hover:text-accent font-semibold">
+            <Link href="#leistungen" prefetch={false} className="text-primary hover:text-accent font-semibold">
               Leistungen
             </Link>
             .
