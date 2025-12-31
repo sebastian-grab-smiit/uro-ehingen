@@ -31,7 +31,7 @@ const services = [
     category: "operationen",
     excerpt: "Vasektomie, Beschneidung, Hydrozelektomie, Varikozelensklerosierung, Lasertherapien und mehr.",
     details: [
-      "Wir führen sämtliche ambulant möglichen Eingriffe durch – darunter Vasektomie (Sterilisation), Zirkumzision (Beschneidung), Hydrozelektomie ('Wasserbruch-OP'), Varikozelensklerosierung, Feigwarzenbehandlung mittels Laser, Harnleiterschienung, Stoßwellenlithotripsie von Nierensteinen und Botulinumtoxin-Injektion in die Harnblase.",
+      "Wir führen sämtliche ambulant möglichen Eingriffe durch – darunter Vasektomie (Sterilisation), Zirkumzision (Beschneidung), Hydrozelektomie ('Wasserbruch-OP'), Varikozelensklerosierung, Feigwarzenbehandlung konventionell und mittels Laser, Harnleiterschienung, endoskopische Steinoperationen, Stoßwellenlithotripsie von Nierensteinen und Botulinumtoxin-Injektion in die Harnblase.",
       "Die Narkose erfolgt durch das erfahrene Anästhesieteam des Alb-Donau-Klinikums Ehingen.",
     ],
   },
@@ -45,7 +45,7 @@ const services = [
   },
   {
     title: "Prostatabiopsie",
-    category: "diagnostik",
+    category: "operationen",
     excerpt: "Schonende transrektale Prostatabiopsien mit lokaler Betäubung oder kurzer Narkose.",
     details: [
       "Wir führen transrektale, sonographisch gesteuerte, systematische Biopsien bei Karzinomverdacht durch – ambulant, nahezu beschwerdefrei und in örtlicher Betäubung oder auf Wunsch in Narkose.",
@@ -79,17 +79,17 @@ const services = [
   {
     title: "Röntgen & Durchleuchtung",
     category: "diagnostik",
-    excerpt: "Konventionelle Aufnahmen, digitale Durchleuchtung und interventionelle Diagnostik.",
+    excerpt: "Digitale Röntgenaufnahmen, Digitale Durchleuchtung und interventionelle Diagnostik.",
     details: [
-      "Wir führen konventionelle Röntgenaufnahmen, digitale Durchleuchtung und interventionelle Diagnostik zur Abklärung bei Hämaturie (Blut im Urin), Tumorverdacht und Harnsteinen durch. Außerdem wechseln wir Ihnen selbstverständlich einliegende Harnleiterschienen.",
+      "Wir führen digitale Röntgenaufnahmen, digitale Durchleuchtung und interventionelle Diagnostik zur Abklärung bei Hämaturie (Blut im Urin), Tumorverdacht und Harnsteinen durch. Außerdem wechseln wir Ihnen selbstverständlich einliegende Harnleiterschienen.",
     ],
   },
   {
     title: "Labor",
     category: "diagnostik",
-    excerpt: "Umfassende Blutparameter inklusive Hormondiagnostik aus eigenem Praxislabor.",
+    excerpt: "Umfassende Blutparameter inklusive Hormondiagnostik aus eigenem Praxislabor und Bakteriologie.",
     details: [
-      "Wir bestimmen sämtliche Blutparameter in unserem praxiseigenen Labor für Sie - für schnelle und zuverlässige Ergebnisse. Hierzu zählen z.B. PSA, Hormone, Entzündungswerte und weitere Parameter, um Diagnostik und Therapie eng zu steuern.",
+      "Wir bestimmen sämtliche Blutparameter in unserem praxiseigenen Labor für Sie - für schnelle und zuverlässige Ergebnisse. Hierzu zählen z.B. PSA, Hormone, Entzündungswerte und weitere Parameter, um Diagnostik und Therapie eng zu steuern. Bakterielle Entzündungen des Harntraktes werden über unser eigenes bakteriologisches Labor diagnostiziert.",
     ],
   },
   {
@@ -98,7 +98,7 @@ const services = [
     excerpt: "Diagnostik, Therapie und Nachsorge sämtlicher urologischer Tumoren.",
     details: [
       "Die Diagnostik, Behandlung und Nachsorge urologischer Krebserkrankungen stellt einen besonderen Schwerpunkt unserer Praxis dar. Wir verfügen über langjährige Erfahrungen mit sämtlichen Formen der konservativen und operativen Tumorbehandlung in allen Erkrankungsstadien.",
-      "Wir orientieren uns an wissenschaftlich fundierten Therapiestandards sowie aktuellen Studienergebnissen und Leitlinien der Deutschen Gesellschaft für Urologie (DGU), der europäischen urologischen Gesellschaft (EAU) und der amerikanischen urologischen Gesellschaft (AUA). Es besteht zudem eine Kooperation mit dem interdisziplinären Prostatakarzinomzentrum des Universitätsklinikums Ulm bzw. des Comprehensive Cancer Center Universitätsklinikum Ulm (CCCU).",
+      "Wir orientieren uns an wissenschaftlich fundierten Therapiestandards sowie aktuellen Studienergebnissen und Leitlinien der Deutschen Gesellschaft für Urologie (DGU) und der europäischen urologischen Gesellschaft (EAU). Es besteht zudem eine Kooperation mit dem interdisziplinären Prostatakarzinomzentrum des Universitätsklinikums Ulm bzw. des Comprehensive Cancer Center Universitätsklinikum Ulm (CCCU).",
     ],
   },
   {
@@ -106,7 +106,7 @@ const services = [
     category: "tumor",
     excerpt: "Ambulante und stationäre medikamentöse Tumortherapien durch zertifizierte Fachärzte.",
     details: [
-      "Wir führen jeweils die personengebundene Facharztbezeichnung 'Medikamentöse Tumortherapie', die besondere Kenntnisse in der onkologischen Therapie urologischer Krebserkrankungen nachweist, und führen Chemotherapie bzw. Immuntherapien bei allen urologischen Krebserkrankungen durch.",
+      "Wir führen jeweils die personengebundene Facharztbezeichnung 'Medikamentöse Tumortherapie', die besondere Kenntnisse in der onkologischen Therapie urologischer Krebserkrankungen nachweist, und führen Chemotherapie bzw. Immuntherapien nach den jeweils aktuellen leitliniengerechten Standards bei allen urologischen Krebserkrankungen durch.",
     ],
   },
   {
@@ -114,9 +114,8 @@ const services = [
     category: "maennergesundheit",
     excerpt: "Früherkennung nach G-BA-Richtlinie plus sinnvolle Zusatzleistungen.",
     details: [
-      "Gemäß den G-BA-Richtlinien für das Leistungsspektrum gesetzlich krankenversicherter Patienten bieten wir für Männer die gezielte Anamnese, eine Untersuchung des äußeren Genitals, die rektale Prostatapalpation und den regionären Lymphknoten-Check gemäß Vorgaben ab 45 Jahren durch. Zudem bieten wir sowohl für Frauen als auch für Männer die Früherkennung von Krebserkrankungen der Haut ab dem Alter von 35 Jahren sowie des Rektums und des übrigen Dickdarms ab dem Alter von 50 Jahren an.",
+      "Gemäß den G-BA-Richtlinien für das Leistungsspektrum gesetzlich krankenversicherter Patienten bieten wir für Männer die gezielte Anamnese, eine Untersuchung des äußeren Genitals, die rektale Prostatapalpation und den regionären Lymphknoten-Check gemäß Vorgaben ab 45 Jahren durch.",
       "Unserer Meinung nach sinnvolle Zusatzuntersuchungen wie Ultraschalluntersuchung der Nieren oder die Bestimmung des PSA-Werts sind im Rahmen der gesetzlichen Leistungen nicht enthalten. Gerne bieten wir Ihnen diese Untersuchungen allerdings als zusätzliche Leistung an.",
-      "Medizinisch notwendige Untersuchungen führen wir selbstverständlich zu Lasten der gesetzlichen Krankenversicherung  - d.h. ohne zusätzliche Kosten für Sie - durch.",
     ],
   },
   {
@@ -148,7 +147,7 @@ const services = [
     category: "maennergesundheit",
     excerpt: "Spermiogramm, Hormondiagnostik und weiterführende Beratung.",
     details: [
-      "Die Spermauntersuchung (Spermiogramm) ist die zentrale Untersuchung, um die Zeugungsfähigkeit des Mannes zu beurteilen. Wir beraten Sie und führen ggf.weitere Hormonanalysen durch.",
+      "Die Spermauntersuchung (Spermiogramm) ist die zentrale Untersuchung, um die Zeugungsfähigkeit des Mannes zu beurteilen. Wir beraten Sie und führen ggf. weitere Hormonanalysen durch.",
     ],
   },
   {

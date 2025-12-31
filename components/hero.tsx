@@ -14,7 +14,7 @@ export function Hero() {
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed text-pretty">
                 Willkommen im urologischen Zentrum für Ehingen und Blaubeuren – Ihrem Ansprechpartner für Vorsorge,
-                Diagnostik und Andrologie mit kurzen Wegen, direkter Beratung und schneller Terminvergabe.
+                Diagnostik und Andrologie mit kurzen Wegen, direkter Beratung und Behandlung.
               </p>
             </div>
 

@@ -5,17 +5,21 @@ export function Team() {
   const team = [
     {
       name: "Dr. med. Thomas Neßlauer",
-      role: "Facharzt für Urologie, Andrologie, medikamentöse Tumortherapie, spezielle urologische Chirurgie, Palliativmedizin",
+      role: "Facharzt für Urologie",
+      additional1: "Zusatzbezeichnungen: Andrologie, Medikamentöse Tumortherapie, Spezielle urologische Chirurgie, Palliativmedizin",
       image: "/assets/nesslauer.jpg",
     },
     {
       name: "Dr. med. Florian Finter",
-      role: "Facharzt für Urologie, medikamentöse Tumortherapie, Ärztliches Qualitätsmanagement",
+      role: "Facharzt für Urologie",
+      additional1: "Zusatzbezeichnungen: Medikamentöse Tumortherapie",
+      additional2: "Ärztliches Qualitätsmanagement",
       image: "/assets/finter.jpg",
     },
     {
       name: "Jürgen Prang",
-      role: "Facharzt für Urologie, Andrologie, medikamentöse Tumortherapie, spezielle urologische Chirurgie, Palliativmedizin",
+      role: "Facharzt für Urologie",
+      additional1: "Zusatzbezeichnungen: Andrologie, Medikamentöse Tumortherapie, Palliativmedizin",
       image: "/assets/prang.jpg",
     },
   ]
@@ -50,6 +54,8 @@ export function Team() {
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold text-foreground mb-2">{member.name}</h3>
                 <p className="text-muted-foreground">{member.role}</p>
+                <p className="text-muted-foreground mt-2 text-sm">{member.additional1}</p>
+                <p className="text-muted-foreground text-sm">{member.additional2}</p>
               </CardContent>
             </Card>
           ))}
@@ -71,7 +77,7 @@ export function Team() {
               <CardContent className="p-8 sm:p-12 flex flex-col justify-center">
                 <h3 className="text-2xl sm:text-3xl font-serif font-bold text-foreground mb-2">Sonja Richter (B.A.)</h3>
                 <p className="text-lg text-primary font-medium mb-6">
-                  Praxismanagerin, Krankenschwester, Fachwirtin für ambulante medizinische Versorgung
+                  Praxismanagerin, Fachwirtin für ambulante medizinische Versorgung, Krankenschwester
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Frau Richter ist unsere Praxismanagerin und für die Organisation eines reibungslosen Praxisablaufs

@@ -66,8 +66,7 @@ export function Contact() {
             Kontakt & Terminvereinbarung
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
-            Alle Kontaktwege und Sprechzeiten für Ehingen und Blaubeuren auf einen Blick. Melden Sie sich telefonisch oder
-            per E-Mail – wir koordinieren zeitnahe Termine.
+            Alle Kontaktwege und Sprechzeiten für Ehingen und Blaubeuren auf einen Blick. Melden Sie sich telefonisch oder über unsere Online-Rezeption. Hier können sie beispielsweise auch Rezeptanforderungen stellen oder die Verlängerung einer Arbeitsunfähigkeitsbescheinigung anfordern.
           </p>
           <p className="text-base text-muted-foreground mt-4">
             Mehr zu unserem Angebot finden Sie im Bereich {" "}
