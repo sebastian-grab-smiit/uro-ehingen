@@ -61,7 +61,7 @@ export function Contact() {
   return (
     <section id="kontakt" className="py-16 sm:py-24 bg-secondary/30">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div className="text-center w-full mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4 text-balance">
             Kontakt & Terminvereinbarung
           </h2>
